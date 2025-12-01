@@ -2,7 +2,7 @@
 
 <a href="https://github.com/MojoLauncher/MojoLauncher/blob/v3_openjdk/README_RU.md">Readme на русском</a>
 
-<img src="https://github.com/MojoLauncher/MojoLauncher/blob/v3_openjdk/app_pojavlauncher/src/main/assets/pojavlauncher.png" align="left" width="150" height="150" alt="LHD LAUNCHER logo">
+<img src="https://cdn.discordapp.com/avatars/1240589426246025307/93ced7d23173efe7c7dfc11348bf9445.png?size=1024" align="left" width="150" height="150" alt="LHD LAUNCHER logo">
 
 [![Android CI](https://github.com/MojoLauncher/MojoLauncher/workflows/Android%20CI/badge.svg)](https://github.com/MojoLauncher/MojoLauncher/actions)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MojoLauncher/MojoLauncher)](https://github.com/MojoLauncher/MojoLauncher/actions)
@@ -33,7 +33,7 @@ You can get **LHD LAUNCHER** via three methods:
 1. You can get the prebuilt app from [automatic builds](https://github.com/MojoLauncher/MojoLauncher/actions).
 
 2. You can get it from Google Play by clicking on this badge:
-[![Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=git.artdeell.mojo)
+[![Google Play](SOON )](https://play.google.com/store/apps/details?id=git.artdeell.mojo)
 
 3. You can [build](#building) from source.
 
