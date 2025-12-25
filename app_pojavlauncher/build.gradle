@@ -329,7 +329,7 @@ dependencies {
     implementation 'net.sourceforge.htmlcleaner:htmlcleaner:2.29'
     implementation 'com.bytedance:bytehook:1.1.1'
 
-    implementation 'com.github.lhdLauncher:alsoft-android-aar:f369161d5f'
+    implementation 'com.github.MojoLauncher:alsoft-android-aar:f369161d5f'
 
     // implementation 'net.sourceforge.streamsupport:streamsupport-cfuture:1.7.0'
     implementation "com.airbnb.android:lottie:6.3.0"
