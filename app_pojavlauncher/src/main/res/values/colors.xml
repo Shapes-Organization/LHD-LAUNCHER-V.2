@@ -6,7 +6,7 @@
     <color name="control_button_pressed_color">#002B2B2B</color>
 
     <!-- Minecraft Menu Buttons -->
-    <color name="minebutton_color">#00FF9A</color> <!-- Neon green -->
+    <color name="minebutton_color">#2CC4E5</color> <!-- Neon green -->
 
     <!-- Backgrounds -->
     <color name="background_app">#0A0A0F</color> <!-- Modern dark -->
