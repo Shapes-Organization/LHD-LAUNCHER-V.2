@@ -50,7 +50,7 @@ configurations {
 }
 
 android {
-    namespace 'git.artdeell.lhd'
+    namespace 'com.mahdin4sure.lhd'
 
     compileSdk = 36
 
@@ -66,7 +66,7 @@ android {
             keyPassword "android"
         }
         googlePlayBuild {
-            storeFile file("lhd_upload.jks")
+            storeFile file("mojo_upload.jks")
             storePassword System.getenv("UPLOAD_KEYSTORE_PASSWORD")
             keyAlias "key0"
             keyPassword System.getenv("UPLOAD_KEYSTORE_PASSWORD")
@@ -74,7 +74,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "git.artdeell.lhd"
+        applicationId "com.mahdin4sure.lhd"
         minSdkVersion 21
         targetSdkVersion 35
         versionCode getDateSeconds()
@@ -103,8 +103,8 @@ android {
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.customDebug
-            resValue 'string', 'application_package', 'git.artdeell.lhd.debug'
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.lhd.scoped.gamefolder.debug'
+            resValue 'string', 'application_package', 'com.mahdin4sure.lhd.debug'
+            resValue 'string', 'storageProviderAuthorities', 'com.mahdin4sure.lhd.scoped.gamefolder.debug'
         }
         proguard {
             initWith debug
@@ -123,8 +123,8 @@ android {
             // defaultConfig already set
             // multiDexEnabled = true
             // debuggable = true
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.lhd.scoped.gamefolder'
-            resValue 'string', 'application_package', 'git.artdeell.lhd'
+            resValue 'string', 'storageProviderAuthorities', 'com.mahdin4sure.lhd.scoped.gamefolder'
+            resValue 'string', 'application_package', 'com.mahdin4sure.lhd'
         }
         gplay {
             initWith release
@@ -288,8 +288,6 @@ afterEvaluate {
 
 		if (variant.getName().toLowerCase().contains("full")) {
             registrar.jreRuntimeDependency 8, "components/jre"
-            registrar.jreRuntimeDependency 17, "components/jre-new"
-            registrar.jreRuntimeDependency 21, "components/jre-21"
         }
         
 		def cacioJarUrl = "https://jitpack.io/com/github/MojoLauncher/%1\$s/%2\$s/%3\$s/%2\$s-%3\$s%4\$s.jar"
@@ -297,7 +295,7 @@ afterEvaluate {
         registrar.onlineJarDependency cacioJarUrl, "caciocavallo", "cacio-shared", "-01d2dc1d65-1", "", "components/caciocavallo"
         registrar.onlineJarDependency cacioJarUrl, "caciocavallo", "cacio-androidnw", "-01d2dc1d65-1", "", "components/caciocavallo"
 
-        registrar.onlineJarDependency cacioJarUrl, "caciocavallo17", "cacio-tta", "-517c312aef-1", "-jar-with-dependencies", "components/caciocavallo17"
+        registrar.onlineJarDependency cacioJarUrl, "caciocavallo17", "cacio-tta", "72a9ab6323", "-jar-with-dependencies", "components/caciocavallo17"
     }
 }
 
@@ -332,6 +330,6 @@ dependencies {
     implementation 'com.github.MojoLauncher:alsoft-android-aar:f369161d5f'
 
     // implementation 'net.sourceforge.streamsupport:streamsupport-cfuture:1.7.0'
-    implementation "com.airbnb.android:lottie:6.3.0"
+
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 }
