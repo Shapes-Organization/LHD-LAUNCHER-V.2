@@ -74,7 +74,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "git.artdeell.mojo"
+        applicationId "com.mahdin4sure.lhd"
         minSdkVersion 21
         targetSdkVersion 35
         versionCode getDateSeconds()
@@ -103,8 +103,8 @@ android {
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.customDebug
-            resValue 'string', 'application_package', 'git.artdeell.mojo.debug'
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder.debug'
+            resValue 'string', 'application_package', 'com.mahdin4sure.lhd.debug'
+            resValue 'string', 'storageProviderAuthorities', 'com.mahdin4sure.lhd.scoped.gamefolder.debug'
         }
         proguard {
             initWith debug
@@ -123,8 +123,8 @@ android {
             // defaultConfig already set
             // multiDexEnabled = true
             // debuggable = true
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder'
-            resValue 'string', 'application_package', 'git.artdeell.mojo'
+            resValue 'string', 'storageProviderAuthorities', 'com.mahdin4sure.lhd.scoped.gamefolder'
+            resValue 'string', 'application_package', 'com.mahdin4sure.lhd'
         }
         gplay {
             initWith release
